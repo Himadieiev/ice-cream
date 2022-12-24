@@ -1,3 +1,10 @@
+body {
+  font-family: $main-font;
+  font-style: normal;
+  color: $main-txcolor;
+  background-color: $main-bgcolor;
+}
+
 .container {
   min-width: 320px;
   margin-right: auto;

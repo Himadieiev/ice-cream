@@ -1,0 +1,140 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: rotate(-180deg);
+}
+
+.modal {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 500ms linear;
+  background-color: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  padding: 28px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+    padding: 32px;
+  }
+}
+.modal__button {
+  position: absolute;
+  cursor: pointer;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  color: #131313;
+}
+.modal__icon {
+  fill: currentColor;
+}
+.modal__text {
+  font-family: "Seymour One", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.modal__text-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.modal__input {
+  width: 100%;
+  height: 32px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+.modal__input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+.modal__input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+.modal__input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #131313;
+}
+.modal__textarea {
+  width: 100%;
+  height: 64px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}/*# sourceMappingURL=index.css.map */

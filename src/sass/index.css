@@ -257,10 +257,18 @@ img {
   font-size: 14px;
   line-height: 1.29;
   color: #131313;
-  padding: 12 40px;
+  padding: 12px 40px;
   width: 196px;
   height: 42px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts__button.btn-two, .contacts__button.btn-one {
+    display: flex;
+    padding: 12px 40px;
+    width: 196px;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__button.btn-two {
@@ -281,7 +289,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__button.btn-one {
     padding: 12px 40px;
-    width: auto;
+    width: 196px;
   }
 }
 

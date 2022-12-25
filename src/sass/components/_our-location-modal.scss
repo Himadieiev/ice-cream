@@ -1,6 +1,6 @@
 // КНОПКИ КАРТА И ФРАНШИЗ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-.contacts__modal-list {
+.local-franch__modal-list {
   width: 100%;
   justify-content: center;
 
@@ -9,12 +9,10 @@
   }
 }
 
-.contacts__button.btn {
+.local-franch__button.btn {
   &-two,
   &-one {
     display: flex;
-    padding: 0 34px;
-    width: 196px;
     justify-content: center;
 
     font-weight: 600;
@@ -22,47 +20,31 @@
     line-height: 1.29;
     color: $second-txcolor;
 
-    padding: 12 40px;
+    padding: 12px 40px;
     width: 196px;
     height: 42px;
     margin: 0 auto;
-  }
 
-  &-two {
     @media screen and (min-width: 768px) {
       display: flex;
       padding: 12px 40px;
       width: 196px;
       justify-content: center;
-    }
-  }
-
-  &-one {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      padding: 12px 40px;
-      width: 196px;
-      justify-content: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding: 12px 40px;
-      width: auto;
     }
   }
 }
 
-.contacts__modal-item {
+.local-franch__modal-item {
   &:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
-      margin-right: 15px;
+      margin-right: 16px;
     }
   }
 }
-.contacts__arrow {
+.local-franch__arrow {
   fill: $seventh-txcolor;
   display: block;
   align-items: center;
@@ -97,7 +79,7 @@
 }
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! СТИЛИ  МОДАЛКИ   К А Р Ы !!!!!!!!!!!!!!!!!!!!!
-.contacts__modal-map {
+.locations {
   position: absolute;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -118,6 +100,28 @@
   @media screen and (min-width: 1280px) {
     width: 568px;
     height: 458px;
+  }
+
+  &__map-title {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: $second-txcolor;
+
+    @media screen and (min-width: 768px) {
+      font-family: 'Seymour One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
 }
 
@@ -147,19 +151,7 @@
   }
 }
 
-.map-title {
-  margin-top: 0;
-  text-align: center;
-  margin-bottom: 20px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-
-  color: $second-txcolor;
-}
-
-.contacts__button-map.btn-two {
+.locations__button-map.btn-two {
   display: block;
   align-items: center;
   text-align: center;
@@ -180,4 +172,8 @@
   @media screen and (min-width: 768px) {
     width: 145px;
   }
+}
+
+.locatiom-link {
+  text-decoration: none;
 }
